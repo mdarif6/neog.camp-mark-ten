@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
+
+* {
+  font-family: Inter;
+}
+
+.header {
+  align-items: center;
+  padding: 3px;
+  margin: 10px;
+  background-color: cadetblue;
+}
+
+.main {
+  margin: 50px;
+}
+
+.footer {
+  align-items: center;
+  padding: 3px;
+  margin: 10px;
+  background-color: cadetblue;
+}
+
+input {
+  width: 300px;
+}
