@@ -2,26 +2,74 @@
 
 * {
   font-family: Inter;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #eee;
+  max-width: 600px;
+  margin: 0 auto;
 }
 
 .header {
-  align-items: center;
-  padding: 3px;
-  margin: 10px;
-  background-color: cadetblue;
+  background-color: white;
+  text-align: center;
+  padding: 1rem 0;
 }
 
 .main {
-  margin: 50px;
+  padding: 3rem 2rem;
+}
+input {
+  width: 100%;
+  padding: 5px 8px;
+}
+.label {
+  margin: 0.5rem 0;
+}
+.inside {
+  padding-top: 1rem;
+}
+button {
+  width: 100%;
+  margin: 2rem 0;
+  padding: 10px 0;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 3px;
+}
+
+.table {
+  width: 100%;
+  border: 1px solid gray;
+}
+
+td,
+th {
+  text-align: center;
+  padding: 5px 0;
+  border: 1px solid gray;
 }
 
 .footer {
-  align-items: center;
-  padding: 3px;
-  margin: 10px;
-  background-color: cadetblue;
+  background-color: white;
+  padding: 3rem 0;
 }
 
-input {
-  width: 300px;
+.footer-header {
+  text-align: center;
+}
+.social-link {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem 0 0;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
 }

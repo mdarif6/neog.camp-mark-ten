@@ -3,7 +3,9 @@ let paidAmount = document.querySelector(".paidamount");
 let changeButton = document.querySelector(".button");
 let outputChange = document.querySelector(".output");
 let tableShow = document.querySelector(".tbody");
+let headTable = document.querySelector(".heading");
 
+headTable.style.display = "none";
 function cashRegister(paidAmount, billAmount) {
   const currency = [2000, 500, 200, 100, 50, 20, 10, 5, 2, 1]; //Why not consoled inside
 
@@ -31,11 +33,14 @@ function clickHandler() {
   console.log(billInput, paidInput);
   console.log("clicked");
   if (billInput === "" || paidInput === "") {
+    headTable.style.display = "none";
     return;
   }
   if (billInput > paidInput) {
     outputChange.textContent = "your paid amount is wrong";
+    headTable.style.display = "none";
   } else {
+    headTable.style.display = "";
     let returnedAmount = cashRegister(paidInput, billInput);
     let currencyKyes = Object.keys(returnedAmount);
     console.log(currencyKyes);
